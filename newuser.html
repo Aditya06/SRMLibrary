@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>SRM University, Online Library Management</title>
+	<link rel="stylesheet" type="text/css" href="css/MyStyle.css">
+</head>
+<body topmargin=0 style="background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('images/srmback.jpg')" >
+<div class="container">
+	    <div class="header1">
+        </div>
+    <div>
+		<div class="header2">
+			<img src="images/logo.jpg" width="175.15" height="100" align="left">
+			<br>
+			<h1 style="text-align:center;font-family:helvetica">Online Library Management</h1>
+		</div>
+		<div class="header3">
+		<nav class="navbar navbar-default">
+		<div class="container-fluid">
+    
+			<ul class="nav navbar-nav">
+				<li><a href="userlogin1.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="#">Publications</a></li>
+				<li><a href="#">Browse By Subjects</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		</nav>
+        </div>
+        <div>
+			<br><br>
+			<h2 align="center">Register New User</h2>
+                <form action='SaveNewUser.php' method='POST'>
+				<table align="center" border="0" cellspacing="4" cellpadding="4">
+					<tr><td><b>Register No.</b></td><td><input type="text" name="regno"></td></tr>
+					<tr><td><b>User Name</b></td><td><input type="text" name="uname"></td></tr>
+					<tr><td><b>Password</b></td><td><input type="password" name="pwd"></td></tr>
+					<tr><td><b>Confirm Password</b></td><td><input type="password" name="cpwd"></td></tr>
+					<tr><td><b>Gender</b></td><td><input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female</td></tr>
+					<tr><td><b>Date of Birth</b></td><td><input type="text" name="dd" size="2">/<input type="text" name="mm" size="2">/<input type="text" name="yy" size="4"> dd/mm/yyyy</td></tr>
+					<tr><td><b>Department</b></td><td><select name="dept"><option>IT</option><option>CSE</option><option>SWE</option><option>ECE</option></td></tr>
+					<tr><td><b>E-mail Id.</b></td><td><input type="text" name="email"></tr>
+					<tr><td><b>Mobile No.</b></td><td><input type="text" name="mobile"></tr>
+					<tr><td></td><td><input type="submit" value=" Submit " name="btnsubmit"></td></tr>
+				</table>
+				</form>
+                </div>
+			</div>
+			
+        
+</body>
+</html>
+
